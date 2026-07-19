@@ -22,3 +22,18 @@ p {
     font-size: 18px;
     line-height: 1.6;
 }
+.back-button {
+    display: block;
+    width: 200px;
+    margin: 25px auto 0;
+    padding: 10px;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #555555;
+}
