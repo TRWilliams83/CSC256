@@ -3,24 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>CSC256 Assignments</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #eeeeee;
+            background-color: #dbeafe;
             margin: 0;
-            padding: 40px;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         main {
+            width: 90%;
             max-width: 600px;
-            margin: auto;
             padding: 30px;
+
             background-color: white;
-            border: 1px solid #cccccc;
-            border-radius: 8px;
+            border: 3px solid #2563eb;
+            border-radius: 12px;
+
             text-align: center;
+            box-shadow: 0 6px 16px rgba(30, 64, 175, 0.2);
+        }
+
+        h1 {
+            color: #1e3a8a;
+            margin-top: 0;
+        }
+
+        p {
+            color: #1e40af;
+            font-size: 18px;
         }
 
         .assignment-button {
@@ -28,14 +46,17 @@
             width: 250px;
             margin: 15px auto;
             padding: 12px;
-            background-color: #333333;
+
+            background-color: #2563eb;
             color: white;
+
             text-decoration: none;
-            border-radius: 5px;
+            border: 2px solid #1d4ed8;
+            border-radius: 6px;
         }
 
         .assignment-button:hover {
-            background-color: #555555;
+            background-color: #1d4ed8;
         }
     </style>
 </head>
@@ -43,13 +64,11 @@
 <body>
     <main>
         <h1>CSC256 Assignments</h1>
-        <p>Click to see assignment</p>
+
+        <p>Select an assignment below.</p>
 
         <a class="assignment-button" href="1.2/">
             Assignment 1.2
-        </a>
-        <a class="assignment-button" href="1.3/">
-            Assignment 1.3
         </a>
     </main>
 </body>
