@@ -1,1 +1,80 @@
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    background-color: #dfe8d5;
+    margin: 0;
+    min-height: 100vh;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow-card {
+    width: 90%;
+    max-width: 700px;
+    padding: 30px;
+
+    background-color: #f7f3e8;
+    border: 3px solid #657a4e;
+    border-radius: 14px;
+
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(58, 73, 45, 0.25);
+}
+
+h1 {
+    color: #40552f;
+    margin-top: 0;
+}
+
+h2 {
+    color: #596f3f;
+}
+
+#isopodImage {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+
+    object-fit: cover;
+    border: 3px solid #8a6d4b;
+    border-radius: 10px;
+}
+
+#isopodDescription {
+    color: #4f493f;
+    font-size: 17px;
+    line-height: 1.5;
+    min-height: 50px;
+}
+
+.button-row {
+    margin-top: 20px;
+}
+
+button,
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+
+    background-color: #657a4e;
+    color: white;
+
+    border: 2px solid #40552f;
+    border-radius: 6px;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+.back-button:hover {
+    background-color: #40552f;
+}
+
+.back-button {
+    margin-top: 25px;
+}
