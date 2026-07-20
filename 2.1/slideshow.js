@@ -68,8 +68,5 @@ function previousImage() {
 nextButton.addEventListener("click", nextImage);
 previousButton.addEventListener("click", previousImage);
 
-// Automatically move to the next image every five seconds.
-setInterval(nextImage, 5000);
-
 // Display the first image when the page loads.
 showImage();
