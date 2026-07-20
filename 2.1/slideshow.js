@@ -1,22 +1,22 @@
 // Store the slideshow information in an array.
 const isopods = [
     {
-        image: "images/dairy-cow.jpg",
+        image: "./images/dairy-cow.jpg",
         name: "Dairy Cow Isopod",
         description: "Dairy Cow isopods have bold black-and-white markings."
     },
     {
-        image: "images/panda-king.jpg",
+        image: "./images/panda-king.jpg",
         name: "Panda King Isopod",
         description: "Panda King isopods are known for their dark and light panda-like pattern."
     },
     {
-        image: "images/powder-orange.jpg",
+        image: "./images/powder-orange.jpg",
         name: "Powder Orange Isopod",
         description: "Powder Orange isopods have a bright orange color and move quickly."
     },
     {
-        image: "images/granulatum.jpg",
+        image: "./images/granulatum.jpg",
         name: "Armadillidium granulatum",
         description: "Armadillidium granulatum has a textured shell and can roll into a ball."
     }
@@ -25,7 +25,7 @@ const isopods = [
 // Start with the first image in the array.
 let currentImage = 0;
 
-// Connect the JavaScript to the HTML elements.
+// Connect JavaScript to the HTML elements.
 const isopodImage = document.getElementById("isopodImage");
 const isopodName = document.getElementById("isopodName");
 const isopodDescription = document.getElementById("isopodDescription");
@@ -34,10 +34,12 @@ const nextButton = document.getElementById("nextButton");
 
 // Display the current image and information.
 function showImage() {
-    isopodImage.src = isopods[currentImage].image;
-    isopodImage.alt = isopods[currentImage].name;
-    isopodName.textContent = isopods[currentImage].name;
-    isopodDescription.textContent = isopods[currentImage].description;
+    const currentIsopod = isopods[currentImage];
+
+    isopodImage.src = currentIsopod.image;
+    isopodImage.alt = currentIsopod.name;
+    isopodName.textContent = currentIsopod.name;
+    isopodDescription.textContent = currentIsopod.description;
 }
 
 // Move forward one image.
@@ -66,7 +68,7 @@ function previousImage() {
 nextButton.addEventListener("click", nextImage);
 previousButton.addEventListener("click", previousImage);
 
-// Automatically move to the next image every 5 seconds.
+// Automatically move to the next image every five seconds.
 setInterval(nextImage, 5000);
 
 // Display the first image when the page loads.
