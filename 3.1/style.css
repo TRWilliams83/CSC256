@@ -1,0 +1,55 @@
+```css
+body {
+    font-family: Verdana, Arial, sans-serif;
+    background-color: #dbeafe;
+    color: #12355b;
+    text-align: center;
+    margin: 0;
+}
+
+main {
+    width: 500px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 2px solid #4682b4;
+    border-radius: 15px;
+}
+
+h1 {
+    color: #174a7e;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #6b9ac4;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #2f6fa5;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-family: Verdana, Arial, sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #174a7e;
+}
+
+#movieOutput {
+    margin-top: 20px;
+    color: #12355b;
+}
+```
