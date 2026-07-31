@@ -1,5 +1,5 @@
 body {
-    font-family: Trebuchet MS, Arial, sans-serif;
+    font-family: "Trebuchet MS", Arial, sans-serif;
     background-color: #cfe8f7;
     color: #16324f;
     text-align: center;
@@ -44,7 +44,7 @@ input {
     border: 2px solid #74a9cf;
     border-radius: 10px;
     background-color: #eef7fc;
-    font-family: Trebuchet MS, Arial, sans-serif;
+    font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
 input:focus {
@@ -60,7 +60,7 @@ button {
     color: white;
     border: none;
     border-radius: 20px;
-    font-family: Trebuchet MS, Arial, sans-serif;
+    font-family: "Trebuchet MS", Arial, sans-serif;
     font-size: 16px;
     cursor: pointer;
 }
@@ -71,11 +71,27 @@ button:hover {
 
 #gameOutput {
     width: 270px;
-    margin: 25px auto 0 auto;
+    margin: 25px auto 0;
     padding: 15px;
     background-color: #e1f0f8;
     border: 2px solid #74a9cf;
     border-radius: 12px;
     text-align: left;
     line-height: 1.8;
+}
+
+.back-button {
+    display: block;
+    width: 180px;
+    margin: 25px auto 0;
+    padding: 10px;
+    background-color: #245b86;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.back-button:hover {
+    background-color: #16324f;
 }
