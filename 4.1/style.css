@@ -1,0 +1,81 @@
+body {
+    font-family: Trebuchet MS, Arial, sans-serif;
+    background-color: #cfe8f7;
+    color: #16324f;
+    text-align: center;
+    margin: 0;
+}
+
+main {
+    width: 500px;
+    margin: 50px auto;
+    padding: 0 0 25px 0;
+    background-color: #ffffff;
+    border: 3px solid #245b86;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+h1 {
+    background-color: #245b86;
+    color: white;
+    margin: 0 0 20px 0;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    width: 270px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: bold;
+    color: #1e4d73;
+}
+
+input {
+    width: 250px;
+    padding: 10px;
+    border: 2px solid #74a9cf;
+    border-radius: 10px;
+    background-color: #eef7fc;
+    font-family: Trebuchet MS, Arial, sans-serif;
+}
+
+input:focus {
+    border-color: #245b86;
+    outline: none;
+    background-color: white;
+}
+
+button {
+    padding: 11px 25px;
+    margin-top: 18px;
+    background-color: #3d7ea6;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-family: Trebuchet MS, Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #245b86;
+}
+
+#gameOutput {
+    width: 270px;
+    margin: 25px auto 0 auto;
+    padding: 15px;
+    background-color: #e1f0f8;
+    border: 2px solid #74a9cf;
+    border-radius: 12px;
+    text-align: left;
+    line-height: 1.8;
+}
