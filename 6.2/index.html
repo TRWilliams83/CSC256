@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Project Gaia Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo-area">
+            <!-- Space monkey with leaf logo will go here later. -->
+        <img
+            class="gaia-logo"
+            src="images/gaia-image.jpg"
+            alt="Project Gaia logo">
+
+            <div>
+                <h1>Project Gaia</h1>
+                <p>Smart Enclosure Management System</p>
+            </div>
+        </div>
+
+        <a class="course-link" href="../index.html">
+            Back to CSC256
+        </a>
+    </header>
+
+    <nav class="main-navigation">
+        <a class="active" href="index.html">
+            Dashboard
+        </a>
+
+        <a href="enclosures.html">
+            Enclosures
+        </a>
+
+        <a href="profile.html">
+            Add Profile
+        </a>
+
+        <a href="insights.html">
+            Care Insights
+        </a>
+
+        <a href="history.html">
+            History
+        </a>
+    </nav>
+
+    <main>
+        <section class="page-heading">
+            <div>
+                <h2>Enclosure Dashboard</h2>
+
+                <p>
+                    Monitor your animals and habitats from one place.
+                </p>
+            </div>
+
+            <a class="primary-button" href="profile.html">
+                Add Enclosure
+            </a>
+        </section>
+
+        <div class="dashboard-layout">
+            <section class="content-panel">
+                <div class="section-heading">
+                    <h2>My Enclosures</h2>
+
+                    <p>Select an enclosure to view its current status.</p>
+                </div>
+
+                <!-- JavaScript will add enclosure cards here. -->
+                <div id="enclosureList" class="enclosure-grid">
+                    <article class="enclosure-card">
+                        <div class="animal-image-placeholder">
+                            Animal Image
+                        </div>
+
+                        <h3>Lorena</h3>
+
+                        <p>Leopard Gecko</p>
+
+                        <p>
+                            Health Score:
+                            <strong>92%</strong>
+                        </p>
+
+                        <button
+                            class="select-button"
+                            type="button"
+                            data-enclosure="lorena">
+                            View Enclosure
+                        </button>
+                    </article>
+
+                    <article class="enclosure-card">
+                        <div class="animal-image-placeholder">
+                            Animal Image
+                        </div>
+
+                        <h3>Bohb</h3>
+
+                        <p>Pac-Man Frog</p>
+
+                        <p>
+                            Health Score:
+                            <strong>85%</strong>
+                        </p>
+
+                        <button
+                            class="select-button"
+                            type="button"
+                            data-enclosure="bohb">
+                            View Enclosure
+                        </button>
+                    </article>
+
+                    <article class="enclosure-card">
+                        <div class="animal-image-placeholder">
+                            Animal Image
+                        </div>
+
+                        <h3>Rainforest</h3>
+
+                        <p>Bioactive Enclosure</p>
+
+                        <p>
+                            Health Score:
+                            <strong>88%</strong>
+                        </p>
+
+                        <button
+                            class="select-button"
+                            type="button"
+                            data-enclosure="rainforest">
+                            View Enclosure
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+            <aside class="quick-actions">
+                <h2>Quick Actions</h2>
+
+                <a href="profile.html">
+                    Add New Enclosure
+                </a>
+
+                <button id="readingButton" type="button">
+                    Enter New Readings
+                </button>
+
+                <button id="feedingButton" type="button">
+                    Record Feeding
+                </button>
+
+                <button id="waterButton" type="button">
+                    Update Water Status
+                </button>
+            </aside>
+        </div>
+
+        <section class="content-panel selected-summary">
+            <div class="section-heading">
+                <h2 id="selectedName">
+                    Selected Enclosure
+                </h2>
+
+                <p id="selectedSpecies">
+                    Select an enclosure above to view its information.
+                </p>
+            </div>
+
+            <div class="status-grid">
+                <article class="status-card">
+                    <h3>Temperature</h3>
+
+                    <p id="temperatureReading">
+                        -- °F
+                    </p>
+                </article>
+
+                <article class="status-card">
+                    <h3>Humidity</h3>
+
+                    <p id="humidityReading">
+                        --%
+                    </p>
+                </article>
+
+                <article class="status-card">
+                    <h3>Health Score</h3>
+
+                    <p id="healthScore">
+                        --%
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <div class="lower-dashboard">
+            <section class="content-panel">
+                <h2>Care Alerts and Recommendations</h2>
+
+                <ul id="recommendationList">
+                    <li>
+                        Select an enclosure to view care recommendations.
+                    </li>
+                </ul>
+
+                <a class="text-link" href="insights.html">
+                    View All Care Insights
+                </a>
+            </section>
+
+            <section class="content-panel">
+                <h2>Recent Activity</h2>
+
+                <ul id="activityList">
+                    <li>No recent activity is available.</li>
+                </ul>
+
+                <a class="text-link" href="history.html">
+                    View Session History
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            Project Gaia | Smart Enclosure Management System
+        </p>
+
+        <p>
+            CSC256 Final Project — Tim Williams
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
