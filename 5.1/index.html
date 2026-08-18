@@ -1,9 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
     <title>Checkers Game</title>
 
@@ -12,9 +15,13 @@
 
 <body>
     <main>
-        <a class="back-button" href="../index.html">
-        ← Back to Assignments
-        </a>
+        <button
+            class="back-button"
+            type="button"
+            onclick="window.location.href='../index.html'">
+            ← Back to Assignments
+        </button>
+
         <h1>Checkers Game</h1>
 
         <section id="colorChoice">
@@ -31,7 +38,9 @@
             <p>Red moves first. Black moves second.</p>
         </section>
 
-        <p id="message">Choose red or black to begin.</p>
+        <p id="message">
+            Choose red or black to begin.
+        </p>
 
         <div
             id="board"
@@ -47,20 +56,28 @@
             <h2>Rules:</h2>
 
             <p>
-                Choose Red or Black
+                Choose red or black.
             </p>
 
             <p>
-                Red always moves first. 
+                Red always moves first.
+            </p>
+
+            <p>
+                Move one square diagonally into an empty space.
+            </p>
+
+            <p>
+                Jump over an opponent's piece to capture it.
             </p>
 
             <p>
                 Kings can move and jump forward or backward.
             </p>
         </section>
-
     </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>
