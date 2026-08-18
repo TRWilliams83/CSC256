@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Care Insights | Project Gaia</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo-area">
+            <!-- Space monkey with leaf logo will go here later. -->
+        <img
+            class="gaia-logo"
+            src="images/gaia-image.jpg"
+            alt="Project Gaia logo">
+
+            <div>
+                <h1>Project Gaia</h1>
+                <p>Smart Enclosure Management System</p>
+            </div>
+        </div>
+
+        <a class="course-link" href="../index.html">
+            Back to CSC256
+        </a>
+    </header>
+
+    <nav class="main-navigation">
+        <a href="index.html">
+            Dashboard
+        </a>
+
+        <a href="enclosures.html">
+            Enclosures
+        </a>
+
+        <a href="profile.html">
+            Add Profile
+        </a>
+
+        <a class="active" href="insights.html">
+            Care Insights
+        </a>
+
+        <a href="history.html">
+            History
+        </a>
+    </nav>
+
+    <main>
+        <section class="page-heading">
+            <div>
+                <h2>Care Insights</h2>
+
+                <p>
+                    Review health scores, current problems, and care
+                    recommendations for every enclosure.
+                </p>
+            </div>
+
+            <a class="primary-button" href="index.html">
+                Return to Dashboard
+            </a>
+        </section>
+
+        <section class="content-panel selected-summary">
+            <div class="section-heading">
+                <h2>Gaia Health Overview</h2>
+
+                <p>
+                    JavaScript calculates these results from the
+                    current and preferred conditions.
+                </p>
+            </div>
+
+            <div class="status-grid">
+                <article class="status-card">
+                    <h3>Average Health</h3>
+
+                    <p id="averageHealth">
+                        --%
+                    </p>
+                </article>
+
+                <article class="status-card">
+                    <h3>Active Alerts</h3>
+
+                    <p id="activeAlerts">
+                        0
+                    </p>
+                </article>
+
+                <article class="status-card">
+                    <h3>Healthy Enclosures</h3>
+
+                    <p id="healthyEnclosures">
+                        0
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="form-section selected-summary">
+            <div class="form-group">
+                <label for="enclosureFilter">
+                    Filter Care Insights
+                </label>
+
+                <select id="enclosureFilter">
+                    <option value="all">
+                        Show All Enclosures
+                    </option>
+                </select>
+            </div>
+        </section>
+
+        <section class="content-panel">
+            <div class="section-heading">
+                <h2>Enclosure Recommendations</h2>
+
+                <p>
+                    Select an enclosure above or review the complete
+                    collection.
+                </p>
+            </div>
+
+            <!-- JavaScript will add insight cards here. -->
+            <div
+                id="insightList"
+                class="enclosure-grid">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Project Gaia | Smart Enclosure Management System
+        </p>
+
+        <p>
+            CSC256 Final Project — Tim Williams
+        </p>
+    </footer>
+
+    <script src="insights.js"></script>
+</body>
+
+</html>
