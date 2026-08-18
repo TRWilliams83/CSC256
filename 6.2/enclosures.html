@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Gaia Enclosures</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo-area">
+            <!-- Space monkey with leaf logo will go here later. -->
+        <img
+            class="gaia-logo"
+            src="images/gaia-image.jpg"
+            alt="Project Gaia logo">
+            <div>
+                <h1>Project Gaia</h1>
+                <p>Smart Enclosure Management System</p>
+            </div>
+        </div>
+
+        <a class="course-link" href="../index.html">
+            Back to CSC256
+        </a>
+    </header>
+
+    <nav class="main-navigation">
+        <a href="index.html">
+            Dashboard
+        </a>
+
+        <a class="active" href="enclosures.html">
+            Enclosures
+        </a>
+
+        <a href="profile.html">
+            Add Profile
+        </a>
+
+        <a href="insights.html">
+            Care Insights
+        </a>
+
+        <a href="history.html">
+            History
+        </a>
+    </nav>
+
+    <main>
+        <section class="page-heading">
+            <div>
+                <h2>My Enclosures</h2>
+
+                <p>
+                    View and manage all animal and habitat profiles.
+                </p>
+            </div>
+
+            <a class="primary-button" href="profile.html">
+                Add Enclosure
+            </a>
+        </section>
+
+        <section class="content-panel selected-summary">
+            <div class="section-heading">
+                <h2>Collection Summary</h2>
+
+                <p>
+                    Current overview of the enclosures saved in Gaia.
+                </p>
+            </div>
+
+            <div class="status-grid">
+                <article class="status-card">
+                    <h3>Total Enclosures</h3>
+
+                    <p id="totalEnclosures">
+                        0
+                    </p>
+                </article>
+
+                <article class="status-card">
+                    <h3>Animals</h3>
+
+                    <p id="totalAnimals">
+                        0
+                    </p>
+                </article>
+
+                <article class="status-card">
+                    <h3>Care Alerts</h3>
+
+                    <p id="totalAlerts">
+                        0
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-panel">
+            <div class="section-heading">
+                <h2>Enclosure Profiles</h2>
+
+                <p>
+                    Select an enclosure to view or edit its profile.
+                </p>
+            </div>
+
+            <!-- JavaScript will create the enclosure cards here. -->
+            <div
+                id="enclosureList"
+                class="enclosure-grid">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Project Gaia | Smart Enclosure Management System
+        </p>
+
+        <p>
+            CSC256 Final Project — Tim Williams
+        </p>
+    </footer>
+
+    <script src="enclosures.js"></script>
+</body>
+
+</html>
