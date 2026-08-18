@@ -601,7 +601,8 @@ feedingButton.addEventListener(
         addHistorySession(
             enclosure,
             "Feeding",
-            foodType + " was recorded as the food given.",
+            foodType +
+                " was recorded as the food given.",
             score
         );
 
@@ -612,6 +613,75 @@ feedingButton.addEventListener(
             enclosure.name +
             ": " +
             foodType
+        );
+    }
+);
+
+// Update water availability.
+waterButton.addEventListener(
+    "click",
+    function () {
+        if (!enclosureIsSelected()) {
+            return;
+        }
+
+        const enclosure =
+            enclosures[selectedEnclosure];
+
+        const waterAnswer = prompt(
+            "Update water status:\n" +
+            "Enter 1 if fresh water is available.\n" +
+            "Enter 2 if fresh water needs to be added."
+        );
+
+        if (waterAnswer === null) {
+            return;
+        }
+
+        if (waterAnswer.trim() === "1") {
+            enclosure.waterAvailable = true;
+        } else if (waterAnswer.trim() === "2") {
+            enclosure.waterAvailable = false;
+        } else {
+            alert("Please enter either 1 or 2.");
+            return;
+        }
+
+        enclosure.lastUpdated =
+            new Date().toLocaleDateString();
+
+        saveProfile(
+            selectedEnclosure,
+            enclosure
+        );
+
+        const score =
+            calculateHealthScore(enclosure);
+
+        let waterMessage;
+
+        if (enclosure.waterAvailable) {
+            waterMessage =
+                "Fresh water is available.";
+        } else {
+            waterMessage =
+                "Fresh water needs to be added.";
+        }
+
+        addHistorySession(
+            enclosure,
+            "Water",
+            waterMessage,
+            score
+        );
+
+        displayEnclosureCards();
+        displayEnclosure(selectedEnclosure);
+
+        alert(
+            enclosure.name +
+            ": " +
+            waterMessage
         );
     }
 );
