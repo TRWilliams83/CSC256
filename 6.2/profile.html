@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Add Enclosure | Project Gaia</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo-area">
+            <!-- Space monkey with leaf logo will go here later. -->
+        <img
+            class="gaia-logo"
+            src="images/gaia-image.jpg"
+            alt="Project Gaia logo">
+
+            <div>
+                <h1>Project Gaia</h1>
+                <p>Smart Enclosure Management System</p>
+            </div>
+        </div>
+
+        <a class="course-link" href="../index.html">
+            Back to CSC256
+        </a>
+    </header>
+
+    <nav class="main-navigation">
+        <a href="index.html">
+            Dashboard
+        </a>
+
+        <a href="enclosures.html">
+            Enclosures
+        </a>
+
+        <a class="active" href="profile.html">
+            Add Profile
+        </a>
+
+        <a href="insights.html">
+            Care Insights
+        </a>
+
+        <a href="history.html">
+            History
+        </a>
+    </nav>
+
+    <main>
+        <section class="page-heading">
+            <div>
+                <h2 id="formTitle">
+                    Add Enclosure Profile
+                </h2>
+
+                <p id="formDescription">
+                    Enter the animal, habitat, and preferred care
+                    information.
+                </p>
+            </div>
+
+            <a class="primary-button" href="enclosures.html">
+                Back to Enclosures
+            </a>
+        </section>
+
+        <form id="profileForm">
+            <fieldset class="form-section">
+                <legend>Animal Information</legend>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="animalName">
+                            Animal or Enclosure Name
+                        </label>
+
+                        <input
+                            id="animalName"
+                            name="animalName"
+                            type="text"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="species">
+                            Species
+                        </label>
+
+                        <input
+                            id="species"
+                            name="species"
+                            type="text"
+                            placeholder="Example: Leopard Gecko"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="habitatType">
+                            Habitat Type
+                        </label>
+
+                        <input
+                            id="habitatType"
+                            name="habitatType"
+                            type="text"
+                            placeholder="Example: Desert Habitat"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="enclosureSize">
+                            Enclosure Size
+                        </label>
+
+                        <input
+                            id="enclosureSize"
+                            name="enclosureSize"
+                            type="text"
+                            placeholder="Example: 40-Gallon"
+                            required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend>Current Conditions</legend>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="currentTemperature">
+                            Current Temperature (°F)
+                        </label>
+
+                        <input
+                            id="currentTemperature"
+                            name="currentTemperature"
+                            type="number"
+                            min="0"
+                            max="150"
+                            step="0.1"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="currentHumidity">
+                            Current Humidity (%)
+                        </label>
+
+                        <input
+                            id="currentHumidity"
+                            name="currentHumidity"
+                            type="number"
+                            min="0"
+                            max="100"
+                            step="0.1"
+                            required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend>Preferred Conditions</legend>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="minimumTemperature">
+                            Minimum Temperature (°F)
+                        </label>
+
+                        <input
+                            id="minimumTemperature"
+                            name="minimumTemperature"
+                            type="number"
+                            min="0"
+                            max="150"
+                            step="0.1"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="maximumTemperature">
+                            Maximum Temperature (°F)
+                        </label>
+
+                        <input
+                            id="maximumTemperature"
+                            name="maximumTemperature"
+                            type="number"
+                            min="0"
+                            max="150"
+                            step="0.1"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="idealTemperature">
+                            Ideal Temperature (°F)
+                        </label>
+
+                        <input
+                            id="idealTemperature"
+                            name="idealTemperature"
+                            type="number"
+                            min="0"
+                            max="150"
+                            step="0.1"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="minimumHumidity">
+                            Minimum Humidity (%)
+                        </label>
+
+                        <input
+                            id="minimumHumidity"
+                            name="minimumHumidity"
+                            type="number"
+                            min="0"
+                            max="100"
+                            step="0.1"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="maximumHumidity">
+                            Maximum Humidity (%)
+                        </label>
+
+                        <input
+                            id="maximumHumidity"
+                            name="maximumHumidity"
+                            type="number"
+                            min="0"
+                            max="100"
+                            step="0.1"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="idealHumidity">
+                            Ideal Humidity (%)
+                        </label>
+
+                        <input
+                            id="idealHumidity"
+                            name="idealHumidity"
+                            type="number"
+                            min="0"
+                            max="100"
+                            step="0.1"
+                            required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend>Care Information</legend>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="lastFeeding">
+                            Last Feeding Date
+                        </label>
+
+                        <input
+                            id="lastFeeding"
+                            name="lastFeeding"
+                            type="date">
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input
+                            id="waterAvailable"
+                            name="waterAvailable"
+                            type="checkbox"
+                            checked>
+
+                        <label for="waterAvailable">
+                            Fresh water is available
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <p id="formMessage" class="form-message"></p>
+
+            <div class="form-buttons">
+                <button
+                    class="primary-button"
+                    type="submit">
+                    Save Profile
+                </button>
+
+                <button
+                    class="secondary-button"
+                    type="reset">
+                    Clear Form
+                </button>
+
+                <a
+                    class="secondary-button"
+                    href="enclosures.html">
+                    Cancel
+                </a>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            Project Gaia | Smart Enclosure Management System
+        </p>
+
+        <p>
+            CSC256 Final Project — Tim Williams
+        </p>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+
+</html>
