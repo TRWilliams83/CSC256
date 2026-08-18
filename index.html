@@ -6,86 +6,47 @@
 
     <title>CSC256 Assignments</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #dbeafe;
-            margin: 0;
-            min-height: 100vh;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        main {
-            width: 90%;
-            max-width: 600px;
-            padding: 30px;
-
-            background-color: white;
-            border: 3px solid #2563eb;
-            border-radius: 12px;
-
-            text-align: center;
-            box-shadow: 0 6px 16px rgba(30, 64, 175, 0.2);
-        }
-
-        h1 {
-            color: #1e3a8a;
-            margin-top: 0;
-        }
-
-        p {
-            color: #1e40af;
-            font-size: 18px;
-        }
-
-        .assignment-button {
-            display: block;
-            width: 250px;
-            margin: 15px auto;
-            padding: 12px;
-
-            background-color: #2563eb;
-            color: white;
-
-            text-decoration: none;
-            border: 2px solid #1d4ed8;
-            border-radius: 6px;
-        }
-
-        .assignment-button:hover {
-            background-color: #1d4ed8;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main>
+    <header>
         <h1>CSC256 Assignments</h1>
+        <p>Tim Williams</p>
+    </header>
 
-        <p>Select an assignment below.</p>
+    <main>
+        <h2>Course Projects</h2>
 
-        <a class="assignment-button" href="1.2/">
-            Assignment 1.2
-        </a>
+        <section class="assignment-list">
+            <a class="assignment-button" href="1.2/">
+                1.2 Information Card
+            </a>
 
-        <a class="assignment-button" href="2.1/">
-            Assignment 2.1
-        </a>
+            <a class="assignment-button" href="2.1/">
+                2.1 JavaScript Slideshow
+            </a>
 
-        <a class="assignment-button" href="3.1/">
-            Assignment 3.1
-        </a>
+            <a class="assignment-button" href="3.1/">
+                3.1 JavaScript Data
+            </a>
 
-        <a class="assignment-button" href="4.1/">
-            Assignment 4.1
-        </a>
+            <a class="assignment-button" href="4.1/">
+                4.1 Game Elements
+            </a>
 
-        <a class="assignment-button" href="5.1/">
-            Assignment 5.1
-        </a>
+            <a class="assignment-button" href="5.1/">
+                5.1 Checkers
+            </a>
+
+            <a class="assignment-button final-button" href="Final/">
+                Final Project: Gaia
+            </a>
+        </section>
     </main>
+
+    <footer>
+        <p>CSC256 — University of Advancing Technology</p>
+    </footer>
 </body>
 </html>
